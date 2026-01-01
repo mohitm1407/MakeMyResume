@@ -1,0 +1,2 @@
+from .personal_details import PersonalDetailsView
+from .educational_details import EducationalDetailsView
