@@ -1,0 +1,4 @@
+from .personal_details import PersonalDetail, PersonalDetailsSchema
+from .educational_details import EducationalDetail, EducationalDetailsSchema
+from .professional_details import ProfessionalDetail, ProfessionalDetailsSchema
+from .project_details import ProjectDetail, ProjectDetailsSchema
