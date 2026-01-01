@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 function Login() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const navigate = useNavigate()
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -12,6 +13,7 @@ function Login() {
     axios.post('http://localhost:8000/auth/login/', { username, password })
       .then(response => {
         console.log('Login successful', response.data)
+        navigate('/home')
       })
       .catch(error => {
         console.error('Login failed', error)
