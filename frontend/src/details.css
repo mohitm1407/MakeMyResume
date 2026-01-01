@@ -188,8 +188,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
+  padding: 10px;
 }
-.field { display: grid; gap: 6px; }
+.field { display: grid; gap: 6px; padding: 10px;}
 .field label { font-weight: 700; font-size: 12px; letter-spacing: 0.2px; }
 .field input, .field textarea {
   width: 100%;
